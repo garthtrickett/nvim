@@ -1,6 +1,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'mhinz/vim-startify'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'iCyMind/NeoSolarized'
 Plug 'tpope/vim-sensible'
 Plug 'chrisbra/vim-commentary'
 Plug 'machakann/vim-highlightedyank'
@@ -204,13 +205,13 @@ let NERDTreeDirArrows = 1
 
 nmap <F2> :NERDTreeToggle<CR> 
 
-
-set background = "dark"
-
-colorscheme desert 
-
-set termguicolors
-let &t_8f = "\[38;2;%lu;%lu;%lum"
-let &t_8b = "\[48;2;%lu;%lu;%lum"
+let g:neosolarized_contrast = "normal"
+let g:neosolarized_visibility = "normal"
+let g:neosolarized_vertSplitBgTrans = 1
+let g:neosolarized_bold = 1
+let g:neosolarized_underline = 1
+let g:neosolarized_italic = 0
 
 
+set background=dark
+colorscheme NeoSolarized
