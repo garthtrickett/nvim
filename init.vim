@@ -35,7 +35,7 @@ noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 inoremap kj <Esc>
-tnoremap jh <C-\><C-n> 
+tnoremap kj <C-\><C-n> 
 noremap <Right> <Nop>
 luafile $HOME/.config/nvim/plugins.lua
 augroup nerdtree_open
