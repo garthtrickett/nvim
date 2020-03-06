@@ -15,7 +15,6 @@ Plug 'sbdchd/neoformat'
 Plug 'davidhalter/jedi-vim'
 Plug 'scrooloose/nerdtree'
 Plug 'neomake/neomake'
-Plug 'lifepillar/vim-solarized8'
 " Enable alignment
 let g:neoformat_basic_format_align = 1
 "
@@ -200,12 +199,18 @@ let NERDTreeMinimalUI = 1
 
 let NERDTreeDirArrows = 1
 
+
+
+
+nmap <F2> :NERDTreeToggle<CR> 
+
+
+set background = "dark"
+
+colorscheme desert 
+
 set termguicolors
 let &t_8f = "\[38;2;%lu;%lu;%lum"
 let &t_8b = "\[48;2;%lu;%lu;%lum"
 
-set background=dark
-colorscheme solarized8
 
-
-nmap <F2> :NERDTreeToggle<CR> 
