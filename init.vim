@@ -34,9 +34,9 @@ call plug#end()
 noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
-inoremap jh <Esc>
+inoremap kj <Esc>
+tnoremap jh <C-\><C-n> 
 noremap <Right> <Nop>
-tnoremap <Esc> <C-\><C-n>
 luafile $HOME/.config/nvim/plugins.lua
 augroup nerdtree_open
 autocmd!
